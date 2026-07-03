@@ -758,7 +758,6 @@ export const ALL_QUESTIONS: Question[] = [
     correctAnswer: 3,
     explanation: "Khi sơ cứu nạn nhân bị bỏng, cần gọi 115, cách ly nguồn cháy, làm mát vùng da bỏng bằng nước sạch hoặc khăn mát (tránh dùng nước quá lạnh) và giữ ấm cơ thể."
   },
-,
   {
     id: 129,
     topicId: 4,
