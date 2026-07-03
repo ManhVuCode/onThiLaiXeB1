@@ -25,7 +25,7 @@ export const TOPICS: Topic[] = [
   { id: 3, name: "Sa hình & Tình huống", description: "Các tình huống giao thông thực tế", icon: "🗺️", color: "text-green-700", bg: "bg-green-50", border: "border-green-200" },
   { id: 4, name: "Kỹ thuật lái xe", description: "Kỹ năng vận hành, xử lý tình huống", icon: "🚗", color: "text-purple-700", bg: "bg-purple-50", border: "border-purple-200" },
   { id: 5, name: "Cấu tạo xe", description: "Động cơ, hệ thống phanh, an toàn xe", icon: "⚙️", color: "text-orange-700", bg: "bg-orange-50", border: "border-orange-200" },
-  { id: 6, name: "Pháp luật & Xử phạt", description: "Mức phạt, giấy tờ, bằng lái xe", icon: "⚖️", color: "text-teal-700", bg: "bg-teal-50", border: "border-teal-200" },
+  { id: 6, name: "Văn hóa, Đạo đức & Pháp luật", description: "Đạo đức người lái xe, giấy tờ, mức phạt", icon: "⚖️", color: "text-teal-700", bg: "bg-teal-50", border: "border-teal-200" },
 ];
 
 export const ALL_QUESTIONS: Question[] = [

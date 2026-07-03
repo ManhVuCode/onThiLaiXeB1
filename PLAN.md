@@ -67,6 +67,12 @@ src/app/
 - [x] Đối chiếu 19 SVG biển báo hiện có với chuẩn QCVN 41 (mã số 102, 122, 123a, 124a, 125, 127, 130, 131a, 208, 211a, 225, 401, 407a, 301a...), sửa màu sắc/hình dạng/tỷ lệ, gắn nhãn mã số biển chính thức. Thêm mới `NoStoppingSign` (P.130) còn thiếu. Sửa 1 `signKey` sai (câu hỏi id 25). Verify: build pass + kiểm tra trực quan qua trình duyệt thật (2 biển mẫu: P.124a, DP.134) — hiển thị đúng, rõ ràng, đúng như mô tả.
 - **Lưu ý:** mã số biển báo (102, 122, 123a...) khớp với kiến thức phổ biến, ổn định, được trích dẫn nhất quán qua rất nhiều nguồn độc lập từ nhiều năm nay — độ tin cậy cao hơn nhiều so với các trích dẫn văn bản pháp luật gần đây (xem cảnh báo ở Milestone 3 bên dưới).
 
+### Quyết định đã duyệt (2026-07-03)
+- Gộp chương "Văn hóa & Đạo đức người lái xe" (~21 câu chính thức) vào Topic 6, đổi tên Topic 6 thành **"Văn hóa, Đạo đức & Pháp luật"**.
+- Giữ lại 5 câu hỏi mức phạt (Nghị định 100/123) hiện có trong Topic 6 dù không thuộc bộ 574 câu chính thức — coi là nội dung tham khảo bổ sung hữu ích.
+- Mục tiêu số câu mỗi topic (nguồn: agy research, cross-check độ tin cậy trung bình — xem cảnh báo bên dưới): Topic 1 ~166 (+146), Topic 2 ~182 (+165), Topic 3 ~114 (+106), Topic 4 ~56 (+46), Topic 5 ~35 (+25), Topic 6 ~21 câu đạo đức mới + giữ 10 câu cũ.
+- **Cảnh báo về nguồn:** Các trích dẫn văn bản pháp luật cụ thể (số hiệu Thông tư/Quyết định) do agy đưa ra KHÔNG được tin tưởng tuyệt đối (mô hình có xu hướng bịa số hiệu văn bản nghe hợp lý, đã phát hiện 2 lần trùng hợp đáng ngờ với ngày hiện tại). Tuy nhiên đã tự xác minh độc lập: repo GitHub thật `truonganhhoang/INT3120-2020` chứa dữ liệu câu hỏi/đáp án/giải thích thật (không phải AI paraphrase) khớp với kiến thức đã biết (vd. nồng độ cồn xe máy 50mg/100ml). Chiến lược: mỗi task mở rộng câu hỏi bắt buộc agy phải fetch nội dung thật từ nguồn cụ thể (không suy luận từ "trí nhớ"), ưu tiên bắt đầu từ repo đã xác minh, và phải liệt kê nguồn cho từng câu.
+
 ## Milestone 3 — Mở rộng ngân hàng câu hỏi + câu điểm liệt (Ưu tiên cao, độ phức tạp: Lớn)
 
 **Phụ thuộc:** Milestone 1 (đã có `data/questions.ts` riêng).
