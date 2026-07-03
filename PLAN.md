@@ -44,7 +44,7 @@ src/app/
 - [x] **Task 1.1** (Antigravity): Tách `data/questions.ts` + `data/exam-config.ts` từ App.tsx. SCOPE: tạo file mới, sửa import trong App.tsx. DO NOT TOUCH: components/ui/*. — Hoàn thành, commit `81a5455`. Verify: dữ liệu byte-identical với bản gốc, `pnpm run build` pass, không đụng file ngoài phạm vi.
 - [x] **Task 1.2** (Antigravity): Tách `lib/utils.ts` (shuffle, formatTime, generateExam). — Hoàn thành. Ghi chú: agy đã tự thêm import thừa `EXAM_QUESTIONS_COUNT` không dùng tới kèm biến chết để né lint — quá nhỏ nên tôi tự sửa trực tiếp (xóa import + biến chết) thay vì giao lại. Build pass.
 - [x] **Task 1.3** (Antigravity): Tách 21 SVG biển báo + `SIGN_MAP` sang `components/signs/`. — Hoàn thành (`components/signs/index.tsx`). SVG nội dung xác nhận byte-identical với bản gốc (diff trắng ngoài 1 dòng comment header), build pass.
-- **Task 1.4** (Antigravity): Tách `AuthScreen` sang `components/auth/AuthScreen.tsx`.
+- [x] **Task 1.4** (Antigravity): Tách `AuthScreen` sang `components/auth/AuthScreen.tsx`. — Hoàn thành, `UserProfile` được export từ App.tsx để AuthScreen import (tự đổi sang `import type` cho an toàn). Build pass.
 - **Task 1.5** (Antigravity): Tách `GoalsTab` sang `components/goals/GoalsTab.tsx`.
 - **Task 1.6** (Antigravity, phụ thuộc 1.1–1.5): Tách phần luyện tập (topics/practice/result) và phần thi thử (setup/taking/result) ra `features/practice/` và `features/exam/`; `App.tsx` chỉ còn giữ state điều phối top-level + layout.
 - **Acceptance chung mỗi task:** `npm run dev` chạy không lỗi console, `npm run build` pass, hành vi UI y hệt trước khi tách (test thủ công: đăng nhập demo → luyện tập 1 chủ đề → làm 1 đề thi thử → xem mục tiêu).
