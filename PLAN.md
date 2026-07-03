@@ -46,7 +46,9 @@ src/app/
 - [x] **Task 1.3** (Antigravity): Tách 21 SVG biển báo + `SIGN_MAP` sang `components/signs/`. — Hoàn thành (`components/signs/index.tsx`). SVG nội dung xác nhận byte-identical với bản gốc (diff trắng ngoài 1 dòng comment header), build pass.
 - [x] **Task 1.4** (Antigravity): Tách `AuthScreen` sang `components/auth/AuthScreen.tsx`. — Hoàn thành, `UserProfile` được export từ App.tsx để AuthScreen import (tự đổi sang `import type` cho an toàn). Build pass.
 - [x] **Task 1.5** (Antigravity): Tách `GoalsTab` sang `components/goals/GoalsTab.tsx`. — Hoàn thành, nội dung/logic byte-identical, import TOPICS/ALL_QUESTIONS từ data/questions. Build pass.
-- **Task 1.6** (Antigravity, phụ thuộc 1.1–1.5): Tách phần luyện tập (topics/practice/result) và phần thi thử (setup/taking/result) ra `features/practice/` và `features/exam/`; `App.tsx` chỉ còn giữ state điều phối top-level + layout.
+- [x] **Task 1.6** (Antigravity, phụ thuộc 1.1–1.5): Tách phần luyện tập (topics/practice/result) và phần thi thử (setup/taking/result) ra `features/practice/PracticeFeature.tsx` và `features/exam/ExamFeature.tsx`; `App.tsx` chỉ còn giữ state điều phối top-level + layout (311 dòng, từ 1260 dòng ban đầu). State KHÔNG chuyển ra khỏi App.tsx — 2 component mới chỉ nhận state/handlers qua props. Verify: `pnpm run build` pass + kiểm thử thủ công end-to-end qua trình duyệt thật (demo login → luyện tập chủ đề có ảnh biển báo → thi thử đủ 35 câu, nộp bài → xem kết quả + chi tiết từng câu → tab Mục tiêu phản ánh đúng lịch sử thi) — toàn bộ hành vi y hệt bản gốc.
+
+**→ Milestone 1 hoàn thành 6/6 task.** App.tsx: 1260 → 311 dòng.
 - **Acceptance chung mỗi task:** `npm run dev` chạy không lỗi console, `npm run build` pass, hành vi UI y hệt trước khi tách (test thủ công: đăng nhập demo → luyện tập 1 chủ đề → làm 1 đề thi thử → xem mục tiêu).
 - Task 1.6 phụ thuộc phải làm sau 1.1–1.5. Các task 1.1–1.5 độc lập, có thể giao song song nếu Antigravity hỗ trợ, nhưng nên làm tuần tự để tránh xung đột merge trong cùng 1 file App.tsx đang bị sửa liên tục.
 
@@ -73,7 +75,7 @@ src/app/
 
 Cấu trúc đề (35 câu/19 phút/đỗ ≥32/rớt nếu sai câu điểm liệt) **đã đúng**. Việc còn lại:
 - **Task 4.1**: Đảm bảo `generateExam` không lặp câu hỏi giữa các lần thi gần nhau khi ngân hàng câu hỏi đã lớn (sau Milestone 3) — có thể cần thêm cơ chế tránh lặp câu đã ra gần đây (tuỳ chọn, đánh giá sau khi có đủ câu hỏi).
-- **Task 4.2**: Thêm màn hình xem lại chi tiết bài thi đã làm (câu nào sai, giải thích) nếu chưa có — cần tôi đọc lại đoạn `examView === "result"` để xác nhận trước khi giao task.
+- ~~**Task 4.2**: Thêm màn hình xem lại chi tiết bài thi~~ — **đã có sẵn**, xác nhận khi đọc `ExamFeature.tsx` (`examView === "result"` render đủ danh sách câu, đáp án đúng/sai, giải thích). Không cần làm thêm.
 
 ## Milestone 5 — Xác thực thật (Tuỳ chọn — CHỈ làm nếu user xác nhận cần multi-device)
 
