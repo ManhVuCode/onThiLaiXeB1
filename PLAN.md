@@ -80,14 +80,37 @@ Task Topic 5 (pilot) đã tìm và tải trực tiếp file PDF chính thức **
 - [x] **Topic 6 (Văn hóa, Đạo đức):** +23 câu (id 106-128, mục tiêu 25, loại 2 câu chỉ áp dụng xe mô tô: câu 191, 200). Nguồn: PDF trên, Chương II câu 181-205. **Cải tiến phương pháp:** agy tự viết script Python dùng `pdfplumber` để so khớp tọa độ hình học của nét gạch chân (rects mỏng) với vị trí text từng phương án — xác định đáp án đúng bằng phát hiện gạch chân thật (không suy đoán). Verify: đối chiếu độc lập nội dung câu hỏi khớp 100%, suy luận logic đáp án đúng hợp lý cho toàn bộ mẫu kiểm tra, xác nhận đúng 2 câu bị loại thực sự là nội dung xe mô tô, build pass, không trùng id.
 - [x] **Topic 4 (Kỹ thuật lái xe):** +44 câu (id 129-172, mục tiêu tối đa 48). Nguồn: PDF trên, Chương III câu 206-263. Loại các câu chỉ áp dụng xe mô tô, các câu phụ thuộc hình ảnh táp-lô không xác định được, và phát hiện đúng 1 câu trùng lặp với câu đã có sẵn (câu 246 PDF ≡ id 47 hiện có) — tự loại bỏ trùng lặp mà không cần nhắc. Gắn đúng `isCritical` cho 5 câu điểm liệt (đường vòng, đường trơn, mở cửa xe, tăng tốc/giảm tốc nguy hiểm, dùng điện thoại). Verify: đối chiếu độc lập nội dung + đáp án khớp 100% cho mẫu kiểm tra, build pass, không trùng id, diff thuần túy addition.
 
-## Milestone 3 — Mở rộng ngân hàng câu hỏi + câu điểm liệt (Ưu tiên cao, độ phức tạp: Lớn)
+## Milestone 3 — Mở rộng ngân hàng câu hỏi + câu điểm liệt (Ưu tiên cao, độ phức tạp: Lớn) — **HOÀN THÀNH phần lớn**
 
 **Phụ thuộc:** Milestone 1 (đã có `data/questions.ts` riêng).
 
-- **Ràng buộc bắt buộc:** Đây là nội dung pháp lý/an toàn giao thông. Antigravity **không được tự bịa câu hỏi** — mỗi câu bổ sung phải đối chiếu/trích nguồn từ bộ 600 câu hỏi thi lý thuyết B1 chính thức (Cục Đường bộ/Bộ GTVT) và danh sách câu điểm liệt chính thức. Nếu không có nguồn xác thực trong tay, Antigravity phải dừng và báo lại thay vì tự sinh nội dung.
-- **Task 3.x**: Chia theo lô ~50-100 câu/lần, theo từng chủ đề (1 lô = 1 task, giữ đúng schema `Question`). Tôi (Sonnet) sẽ tự cung cấp nguồn câu hỏi/đối chiếu trước khi giao task này — không giao "tự đi tìm nguồn" cho Antigravity nếu không có sẵn tài liệu.
-- **Task 3.y**: Đối chiếu và gắn đúng `isCritical` theo danh sách câu điểm liệt chính thức.
-- Milestone này **cần user xác nhận nguồn dữ liệu** trước khi bắt đầu — không tự động chạy.
+- **Ràng buộc bắt buộc:** Đây là nội dung pháp lý/an toàn giao thông. Không tự bịa câu hỏi — mọi câu phải trích từ nguồn xác thực được (PDF chính thức, xem trên). Đã tuân thủ nghiêm ngặt xuyên suốt.
+
+### Kết quả cuối cùng (2026-07-03)
+
+Chuyển sang dùng **Claude Opus (qua Agent tool) làm subagent thay cho `agy`** ở giai đoạn nước rút (theo yêu cầu người dùng, vì lo ngại token Antigravity cạn và cần tăng tốc song song hóa). 8 subagent Opus chạy song song, mỗi cái ghi vào 1 file riêng (`src/app/data/_batches/*.ts`) để tránh xung đột khi merge — sau đó tôi tự gộp lại bằng script Node (renumber id tuần tự, dedupe, insert vào `questions.ts`), verify kỹ rồi mới xoá các file batch.
+
+| Chương chính thức | Topic | Câu gốc PDF | Số thêm | Ghi chú |
+|---|---|---|---|---|
+| Chương I – Quy tắc | 1 | 1-180 | +150 (3 batch song song) | |
+| Chương II – Đạo đức | 6 | 181-205 | +23 | Dùng `pdfplumber` so khớp gạch chân |
+| Chương III – Kỹ thuật | 4 | 206-263 | +44 | |
+| Chương IV – Cấu tạo | 5 | 264-300 | +30 | Batch pilot đầu tiên |
+| Chương V – Biển báo | 2 | 301-485 | +174 (3 batch song song) | signKey chỉ gán khi khớp CHÍNH XÁC key có sẵn trong SIGN_MAP, còn lại mô tả bằng chữ |
+| Chương VI – Sa hình | 3 | 486-600 | +98 (2 batch song song) | Dùng khả năng vision của Claude (đọc PDF qua Read tool) để hiểu sơ đồ giao thông — agy (Gemini) không làm được việc này, phải chuyển sang Opus |
+
+**Tổng: 172 → 593 câu hỏi.** Phân bố theo topic: 169/191/106/54/40/33.
+
+**Verify đã thực hiện:**
+- Dedup 2 lớp: cross-batch (phát hiện 1 trùng lặp thật giữa topic1-b/topic1-c) + vs 172 câu cũ (0 trùng) — bằng cách `require()` thực sự các file JS/TS chứ không chỉ regex.
+- Phát hiện và sửa 1 bug thật: 1 dấu phẩy thừa từ lần merge Topic 4 trước đó tạo "hole" trong mảng (length 173 thay vì 172) — vô hại lúc runtime (`.filter`/`.map` bỏ qua hole) nhưng đã fix.
+- Toàn bộ `signKey` mới đối chiếu tồn tại thật trong `SIGN_MAP`.
+- Đối chiếu độc lập (tự tải lại PDF, tự chạy `pdfplumber`) nhiều mẫu across tất cả 8 batch — khớp 100%, kể cả 1 trường hợp agent tự flag nghi ngờ (câu 136) đã verify lại bằng tay và xác nhận agent đúng.
+- Build pass, test end-to-end thật trên trình duyệt (đăng nhập → đủ 6 topic với số câu mới → thi thử 35 câu → nộp bài → xem kết quả) — chạy mượt.
+
+**Còn thiếu (không chặn, có thể làm sau nếu cần):**
+- Một số câu bị loại vì phụ thuộc hình ảnh táp-lô/sơ đồ không đọc rõ (mỗi batch tự báo cáo số lượng và lý do cụ thể) — chấp nhận được, ưu tiên độ chính xác hơn số lượng.
+- Danh sách câu điểm liệt (isCritical) chưa đối chiếu với danh sách 60 câu điểm liệt chính thức đầy đủ — hiện chỉ gắn dựa trên phán đoán ngữ cảnh nguy hiểm rõ ràng của từng batch, nên coi là gần đúng chứ chưa phải danh sách chính thức 100%.
 
 ## Milestone 4 — Hoàn thiện chế độ thi thử (Ưu tiên vừa, độ phức tạp: Nhỏ)
 
