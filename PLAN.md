@@ -62,6 +62,11 @@ src/app/
 - **Acceptance:** F5 trang giữa chừng (đã đăng nhập, đã luyện 1 chủ đề) → dữ liệu vẫn còn. Xóa localStorage → app reset về AuthScreen sạch, không crash.
 - Antigravity làm toàn bộ; tôi tự làm phần review đảm bảo không có race condition giữa `useEffect` load ban đầu và các lần set sau.
 
+## Milestone 1.7 — Sửa độ chính xác biển báo theo QCVN 41:2019/BGTVT (Hoàn thành)
+
+- [x] Đối chiếu 19 SVG biển báo hiện có với chuẩn QCVN 41 (mã số 102, 122, 123a, 124a, 125, 127, 130, 131a, 208, 211a, 225, 401, 407a, 301a...), sửa màu sắc/hình dạng/tỷ lệ, gắn nhãn mã số biển chính thức. Thêm mới `NoStoppingSign` (P.130) còn thiếu. Sửa 1 `signKey` sai (câu hỏi id 25). Verify: build pass + kiểm tra trực quan qua trình duyệt thật (2 biển mẫu: P.124a, DP.134) — hiển thị đúng, rõ ràng, đúng như mô tả.
+- **Lưu ý:** mã số biển báo (102, 122, 123a...) khớp với kiến thức phổ biến, ổn định, được trích dẫn nhất quán qua rất nhiều nguồn độc lập từ nhiều năm nay — độ tin cậy cao hơn nhiều so với các trích dẫn văn bản pháp luật gần đây (xem cảnh báo ở Milestone 3 bên dưới).
+
 ## Milestone 3 — Mở rộng ngân hàng câu hỏi + câu điểm liệt (Ưu tiên cao, độ phức tạp: Lớn)
 
 **Phụ thuộc:** Milestone 1 (đã có `data/questions.ts` riêng).
