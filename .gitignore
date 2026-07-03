@@ -6,3 +6,4 @@ dist/
 .claude/scheduled_tasks.lock
 .env
 .env.local
+.vercel
