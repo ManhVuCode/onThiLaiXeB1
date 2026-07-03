@@ -758,4 +758,365 @@ export const ALL_QUESTIONS: Question[] = [
     correctAnswer: 3,
     explanation: "Khi sơ cứu nạn nhân bị bỏng, cần gọi 115, cách ly nguồn cháy, làm mát vùng da bỏng bằng nước sạch hoặc khăn mát (tránh dùng nước quá lạnh) và giữ ấm cơ thể."
   },
+,
+  {
+    id: 129,
+    topicId: 4,
+    question: 'Khi vào số để khởi hành xe ô tô có số tự động, người lái xe phải thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Đạp bàn đạp phanh chân hết hành trình, vào số và nhả phanh đỗ, kiểm tra lại xem có bị nhầm số không rồi mới cho xe lăn bánh.', 'Đạp bàn đạp để tăng ga với mức độ phù hợp, vào số và kiểm tra lại xem có bị nhầm số không rồi mới cho xe lăn bánh.'],
+    correctAnswer: 0,
+    explanation: 'Khi khởi hành xe số tự động, lái xe cần đạp phanh chân hết hành trình để ngăn xe chuyển động tự do, sau đó mới vào số D (hoặc R) và hạ phanh đỗ, kiểm tra an toàn trước khi di chuyển.'
+  },
+  {
+    id: 130,
+    topicId: 4,
+    question: 'Khi nhả phanh đỗ cơ khí điều khiển bằng tay (phanh tay), người lái xe cần phải thực hiện các thao tác nào?',
+    options: ['Dùng lực tay phải kéo cần phanh tay về phía sau hết hành trình; nếu khóa hãm bị kẹt cứng phải đẩy mạnh phanh tay về phía trước, sau đó bóp khóa hãm.', 'Dùng lực tay phải bóp khóa hãm đẩy cần phanh tay về phía trước hết hành trình; nếu khóa hãm bị kẹt cứng phải kéo cần phanh tay về phía sau đồng thời bóp khóa hãm.', 'Dùng lực tay phải đẩy cần phanh tay về phía trước hết hành trình; nếu khóa hãm bị kẹt cứng phải đẩy mạnh phanh tay về phía trước, sau đó bóp khóa hãm.'],
+    correctAnswer: 1,
+    explanation: 'Để nhả phanh tay đúng cách, dùng tay phải bóp khóa hãm rồi đẩy cần phanh về phía trước hết hành trình. Nếu khóa hãm bị kẹt cứng, kéo phanh tay nhẹ về phía sau đồng thời bóp khóa hãm rồi mới đẩy về trước.'
+  },
+  {
+    id: 131,
+    topicId: 4,
+    question: 'Khi khởi hành ô tô sử dụng hộp số cơ khí trên đường bằng, người lái xe cần thực hiện các thao tác nào theo trình tự dưới đây?',
+    options: ['Kiểm tra an toàn xung quanh xe ô tô; nhả từ từ đến 1/2 hành trình bàn đạp ly hợp (côn) và giữ trong khoảng 3 giây; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động.', 'Kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ từ đến 1/2 hành trình bàn đạp côn và giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động.'],
+    correctAnswer: 1,
+    explanation: 'Khởi hành xe số cơ khí (số sàn): Bước bắt buộc là đạp ly hợp (côn) hết hành trình, sau đó vào số 1, nhả phanh tay, báo hiệu còi đèn, tăng ga nhẹ, nhả côn từ từ đến điểm tiếp giáp ly hợp và giữ khoảng 3 giây trước khi nhả hết côn kết hợp tăng ga.'
+  },
+  {
+    id: 132,
+    topicId: 4,
+    question: 'Khi quay đầu xe, người lái xe cần phải quan sát và thực hiện các thao tác nào để bảo đảm an toàn giao thông?',
+    options: ['Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe cho thích hợp; quay đầu xe với tốc độ thấp; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đầu xe về phía nguy hiểm, đưa đuôi xe về phía an toàn.', 'Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe; quay đầu xe với tốc độ tối đa; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đuôi xe về phía nguy hiểm và đầu xe về phía an toàn.'],
+    correctAnswer: 0,
+    explanation: 'Khi quay đầu xe ở nơi nguy hiểm (như đường dốc, hẹp), luôn hướng đầu xe về phía nguy hiểm để quan sát được chướng ngại vật trước mắt, còn đuôi xe (nơi khuất tầm nhìn) hướng về phía an toàn.'
+  },
+  {
+    id: 133,
+    topicId: 4,
+    question: 'Khi ngồi lái ô tô tư thế chân, lưng, tay của người lái xe như thế nào là đúng để bảo đảm an toàn và thoải mái?',
+    options: ['Điều chỉnh ghế sao cho chân có thể đạp phanh và ga dễ dàng, ngồi thẳng lưng, hai tay nắm vô lăng, tay trái nắm ở vị trí 9 đến 10 giờ và tay phải nắm ở vị trí từ 2 đến 4 giờ.', 'Ngồi sát vô lăng để dễ quan sát hoặc ngồi tự do, không cần điều chỉnh ghế.', 'Ngồi ngả người về phía sau nhiều để thư giãn, chân trái để ở vị trí chân ga, hai tay nắm vô lăng ở vị trí bất kỳ.'],
+    correctAnswer: 0,
+    explanation: 'Tư thế ngồi lái xe ô tô chuẩn: điều chỉnh ghế ngồi để đạp ga/phanh thoải mái, thẳng lưng, tay nắm vô lăng ở vị trí 9-10 giờ (tay trái) và 2-4 giờ (tay phải) để có góc điều khiển tối ưu.'
+  },
+  {
+    id: 134,
+    topicId: 4,
+    question: 'Khi điều khiển ô tô lên dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để bảo đảm an toàn?',
+    options: ['Tăng lên số cao từ chân dốc, điều chỉnh ga cho xe nhanh lên dốc; đến gần đỉnh dốc phải tăng ga để xe nhanh chóng qua dốc; về số thấp, đi sát về phía bên phải đường, có tín hiệu (còi, đèn) để báo cho người lái xe đi ngược chiều biết.', 'Về số thấp từ chân dốc, điều chỉnh ga cho xe từ từ lên dốc; đến gần đỉnh dốc phải đi chậm, đi sát về phía bên phải đường, có tín hiệu (còi, đèn) để báo cho người lái xe đi ngược chiều biết.'],
+    correctAnswer: 1,
+    explanation: 'Khi lên dốc cao, cần về số thấp từ chân dốc để động cơ có đủ mô-men xoắn vượt dốc, đi chậm sát lề bên phải và bật tín hiệu còi/đèn báo hiệu cho xe đi ngược chiều.'
+  },
+  {
+    id: 135,
+    topicId: 4,
+    question: 'Khi điều khiển ô tô xuống dốc dài, người lái xe cần thực hiện các thao tác nào dưới đây để bảo đảm an toàn?',
+    options: ['Tăng lên số cao, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ.', 'Về số thấp, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ.', 'Về số không (0), nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ.'],
+    correctAnswer: 1,
+    explanation: 'Xuống dốc dài phải về số thấp phù hợp để tận dụng lực hãm động cơ (phanh động cơ), không được rà phanh chân liên tục vì sẽ làm nóng má phanh gây cháy, mất hiệu lực phanh nguy hiểm.'
+  },
+  {
+    id: 136,
+    topicId: 4,
+    question: 'Khi xuống dốc, muốn dừng xe, người lái xe cần thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số 1, đạp 1/2 ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân, sử dụng phanh đỗ.', 'Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên trái; đạp hết hành trình ly hợp (côn) và nhả bàn đạp ga để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được tại chỗ dừng; khi xe đã dừng, đạp và giữ phanh chân.', 'Có tín hiệu rẽ trái, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số không (N) để xe đi đến chỗ dừng, khi xe đã dừng, sử dụng phanh đỗ.'],
+    correctAnswer: 0,
+    explanation: 'Dừng xe khi xuống dốc: bật xi-nhan phải, đỗ sát lề phải, phanh sớm và mạnh để kiểm soát tốc độ, về số 1, khi dừng hẳn thì về N và kéo phanh đỗ để chống trôi xe.'
+  },
+  {
+    id: 137,
+    topicId: 4,
+    question: 'Khi điều khiển xe trên đường vòng người lái xe cần phải làm gì để bảo đảm an toàn?',
+    options: ['Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng coi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng.', 'Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; tăng tốc để nhanh chóng qua đường vòng và giảm tốc độ sau khi qua đường vòng.'],
+    correctAnswer: 0,
+    explanation: 'Vào đường vòng cần giảm tốc độ từ trước, về số thấp phù hợp để tăng tính bám đường, chú ý quan sát chướng ngại vật và báo hiệu bằng còi/đèn.',
+    isCritical: true
+  },
+  {
+    id: 138,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô rẽ phải, người lái xe cần thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Có tín hiệu rẽ phải; quan sát an toàn phía sau; điều khiển xe sang làn đường bên trái; giảm tốc độ và quan sát an toàn phía bên phải để điều khiển xe qua chỗ đường giao nhau.', 'Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải.', 'Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; quan sát an toàn phía sau; điều khiển xe bám sát vào phía phải đường; tăng tốc độ và quan sát an toàn phía bên trái để điều khiển xe qua chỗ đường giao nhau.'],
+    correctAnswer: 1,
+    explanation: 'Khi rẽ phải, cách chỗ rẽ một khoảng cách an toàn phải bật xi-nhan phải, giảm tốc độ, quan sát kỹ trước sau và bên phải (điểm mù) rồi từ từ cho xe rẽ phải.'
+  },
+  {
+    id: 139,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô rẽ trái, người lái xe cần thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ trái.', 'Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái, tăng tốc độ để xe nhanh chóng qua chỗ đường giao nhau; có tín hiệu xin đổi làn đường; quan sát an toàn xung quanh đặc biệt là bên trái; đổi làn đường sang phải để mở rộng vòng cua.'],
+    correctAnswer: 0,
+    explanation: 'Khi rẽ trái, cách chỗ rẽ một khoảng cách an toàn phải bật xi-nhan trái, giảm tốc độ, quan sát xung quanh đặc biệt là góc bên trái, chuyển làn sang trái và từ từ cho xe rẽ.'
+  },
+  {
+    id: 140,
+    topicId: 4,
+    question: 'Khi điều khiển xe sử dụng hộp số cơ khí vượt qua rãnh lớn cắt ngang mặt đường, người lái xe cần thực hiện các thao tác nào để đảm bảo an toàn?',
+    options: ['Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tăng số, tăng tốc độ để bánh xe sau vượt qua rãnh.', 'Tăng ga, tăng số để hai bánh xe trước và bánh xe sau vượt qua khỏi rãnh và chạy bình thường.', 'Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh.'],
+    correctAnswer: 2,
+    explanation: 'Kỹ thuật qua rãnh lớn cắt ngang đường của xe số sàn: về số 1, cho hai bánh trước từ từ xuống rãnh rồi tăng ga bò lên, sau đó để hai bánh sau từ từ xuống rãnh rồi mới tăng ga cho xe lên khỏi rãnh để tránh va đập gầm.'
+  },
+  {
+    id: 141,
+    topicId: 4,
+    question: 'Khi điều khiển xe qua đường sắt, người lái xe cần phải thực hiện các thao tác nào dưới đây để bảo đảm an toàn?',
+    options: ['Khi có chuông báo hoặc thanh chắn đã hạ xuống, người lái xe phải dừng xe tạm thời đúng khoảng cách an toàn, kéo phanh tay nếu đường dốc hoặc phải chờ lâu.', 'Khi không có chuông báo hoặc thanh chắn không hạ xuống, người lái xe cần phải quan sát nếu thấy đủ điều kiện an toàn thì về số thấp, tăng ga nhẹ và không thay đổi số trong quá trình vượt qua đường sắt để tránh động cơ chết máy cho xe cho vượt qua.', 'Cả hai ý trên.'],
+    correctAnswer: 2,
+    explanation: 'Khi qua đường sắt, nếu có tín hiệu/chuông/barrier thì phải dừng lại ở khoảng cách an toàn. Nếu không có rào chắn, quan sát kỹ, về số thấp, giữ đều ga qua đường sắt và tuyệt đối không chuyển số giữa chừng để tránh chết máy.'
+  },
+  {
+    id: 142,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô tự đổ, người lái xe cần chú ý những điểm gì để bảo đảm an toàn?',
+    options: ['Khi chạy trên đường xấu, nhiều ổ gà nên chạy chậm để thùng xe không bị lắc mạnh, không gây hiện tượng lệch "ben"; khi chạy vào đường vòng, cần giảm tốc độ, không lấy lái gấp và không phanh gấp.', 'Khi chạy trên đường quốc lộ, đường bằng phẳng không cần hạ hết thùng xe xuống.', 'Khi đổ hàng phải chọn vị trí có nền đường cứng và phẳng, dừng hẳn xe, kéo hết phanh đỗ; sau đó mới điều khiển cơ cấu nâng "ben" để đổ hàng, đổ xong hàng mới hạ thùng xuống.', 'Ý 1 và ý 3.'],
+    correctAnswer: 3,
+    explanation: 'Đối với xe ô tô tự đổ (xe ben): chạy đường xấu phải đi chậm để tránh thùng xe rung lắc mạnh làm lệch ben; khi đổ hàng phải đỗ nơi phẳng cứng, kéo phanh đỗ rồi mới nâng ben; đổ xong phải hạ ben hoàn toàn mới chạy.'
+  },
+  {
+    id: 143,
+    topicId: 4,
+    question: 'Khi điều khiển xe tăng số, người lái xe cần chú ý những điểm gì để bảo đảm an toàn?',
+    options: ['Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.', 'Nhìn xuống buồng lái để biết chính xác vị trí các tay số, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, vù ga phải phù hợp với tốc độ.'],
+    correctAnswer: 0,
+    explanation: 'Thao tác tăng số: phải thực hiện tuần tự từ thấp lên cao, nhịp nhàng và chính xác. Quy tắc quan trọng nhất là không được nhìn xuống buồng lái/cần số khi đang chạy xe.'
+  },
+  {
+    id: 144,
+    topicId: 4,
+    question: 'Khi điều khiển xe giảm số, người lái xe cần phải chú ý những điểm gì để bảo đảm an toàn?',
+    options: ['Nhìn xuống buồng lái để biết chính xác vị trí các tay số, cần phải giảm thứ tự từ cao xuống thấp, phối hợp các động tác phải nhịp nhàng, chính xác.', 'Không được nhìn xuống buồng lái, cần phải giảm thứ tự từ cao xuống thấp, phối hợp các động tác phải nhịp nhàng, chính xác, vù ga phải phù hợp với tốc độ.'],
+    correctAnswer: 1,
+    explanation: 'Thao tác giảm số: thực hiện tuần tự từ cao xuống thấp, nhịp nhàng, có thể vù ga phù hợp với tốc độ. Tuyệt đối không được nhìn xuống buồng lái để đảm bảo quan sát đường phía trước.'
+  },
+  {
+    id: 145,
+    topicId: 4,
+    question: 'Để giảm tốc độ khi ô tô đi xuống đường dốc dài, người lái xe phải thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Nhả bàn đạp ga, đạp ly hợp (côn) hết hành trình, đạp mạnh phanh chân để giảm tốc độ.', 'Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ.', 'Nhả bàn đạp ga, tăng lên số cao, đạp phanh chân với mức độ phù hợp để giảm tốc độ.'],
+    correctAnswer: 1,
+    explanation: 'Để giảm tốc độ khi xuống dốc dài, người lái phải về số thấp phù hợp để động cơ tự hãm xe, kết hợp phanh chân nhẹ nhàng khi cần thiết, không được đạp hết côn hoặc về số 0.'
+  },
+  {
+    id: 146,
+    topicId: 4,
+    question: 'Khi điều khiển ô tô qua đường ngập nước, người lái xe cần thực hiện các thao tác nào để đảm bảo an toàn?',
+    options: ['Tăng lên số cao, tăng ga và giảm ga liên tục để thay đổi tốc độ, giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước.', 'Đạp ly hợp (côn) hết hành trình, tăng ga và giảm ga liên tục để thay đổi tốc độ, giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước.', 'Quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước.'],
+    correctAnswer: 2,
+    explanation: 'Lái xe qua đường ngập nước: quan sát mức ngập xem có an toàn (dưới ống xả/hút gió), về số thấp, giữ đều ga và giữ vững tay lái để vượt qua, tránh thốc ga đột ngột.'
+  },
+  {
+    id: 147,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô tới gần xe chạy ngược chiều vào ban đêm, người lái xe cần thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Chuyển từ đèn chiếu xa sang đèn chiếu gần; không nhìn thẳng vào đèn của xe chạy ngược chiều mà nhìn chếch sang phía phải theo chiều chuyển động của xe mình.', 'Chuyển từ đèn chiếu gần sang đèn chiếu xa; không nhìn thẳng vào đèn của xe chạy ngược chiều mà nhìn chếch sang phía phải theo chiều chuyển động của xe mình.', 'Chuyển từ đèn chiếu xa sang đèn chiếu gần; nhìn thẳng vào đèn của xe chạy ngược chiều để tránh xe bảo đảm an toàn.'],
+    correctAnswer: 0,
+    explanation: 'Tránh xe ngược chiều ban đêm: phải chuyển từ đèn pha (chiếu xa) sang đèn cốt (chiếu gần), không nhìn trực diện vào đèn pha xe đối diện mà nhìn hơi chếch sang lề đường bên phải để định vị làn đường.'
+  },
+  {
+    id: 148,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô trên đường trơn cần chú ý những điểm gì để bảo đảm an toàn?',
+    options: ['Giữ vững tay lái cho xe đi đúng vệt bánh xe đi trước, sử dụng số thấp đi chậm, giữ đều ga, đánh lái ngoặt và phanh gấp khi cần thiết.', 'Giữ vững tay lái cho xe đi đúng vệt bánh xe đi trước, sử dụng số thấp đi chậm, gài cầu (nếu có), giữ đều ga, không lấy nhiều lái, không đánh lái ngoặt và phanh gấp.'],
+    correctAnswer: 1,
+    explanation: 'Đi xe đường trơn trượt: chạy số thấp, đi chậm, giữ đều ga, gài cầu nếu có. Tuyệt đối không đánh lái ngoặt hay phanh gấp vì lốp sẽ bị mất bám hoàn toàn và gây trượt xoay xe.',
+    isCritical: true
+  },
+  {
+    id: 149,
+    topicId: 4,
+    question: 'Trong các loại nhiên liệu dưới đây, loại nhiên liệu nào giảm thiểu ô nhiễm môi trường?',
+    options: ['Xăng và dầu diesel.', 'Xăng sinh học và khí sinh học.', 'Ý 1 và ý 2.'],
+    correctAnswer: 1,
+    explanation: 'Xăng sinh học (như E5, E10) và khí sinh học (biogas) có nguồn gốc thực vật/hữu cơ, khi cháy phát thải lượng khí độc hại ít hơn nhiều so với xăng dầu hóa thạch thông thường.'
+  },
+  {
+    id: 150,
+    topicId: 4,
+    question: 'Các biện pháp tiết kiệm nhiên liệu khi chạy xe?',
+    options: ['Bảo dưỡng xe theo định kỳ và có kế hoạch lộ trình trước khi xe chạy.', 'Kiểm tra áp suất lốp theo quy định và chạy xe với tốc độ phù hợp với tình trạng mặt đường và mật độ giao thông trên đường.', 'Cả hai ý trên.'],
+    correctAnswer: 2,
+    explanation: 'Để tiết kiệm nhiên liệu: cần bảo dưỡng định kỳ, kiểm tra áp suất lốp đúng quy chuẩn, lập lộ trình hợp lý và chạy xe với tốc độ ổn định, phù hợp với mật độ giao thông.'
+  },
+  {
+    id: 151,
+    topicId: 4,
+    question: 'Khi đã đỗ xe ô tô sát lề đường bên phải, người lái xe phải thực hiện các thao tác nào dưới đây khi mở cửa xuống xe để đảm bảo an toàn?',
+    options: ['Quan sát tình hình giao thông phía trước, phía sau và phía bên mở cửa xe, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô.', 'Mở cánh cửa và quan sát tình hình giao thông phía trước, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô.', 'Mở cánh cửa hết hành trình và nhanh chóng ra khỏi xe ô tô.'],
+    correctAnswer: 0,
+    explanation: 'Quy trình mở cửa xuống xe ô tô an toàn: quan sát kỹ giao thông trước sau qua gương và quay đầu nhìn trực tiếp; mở hé cánh cửa để cảnh báo phương tiện phía sau; khi an toàn mới mở vừa đủ để xuống.',
+    isCritical: true
+  },
+  {
+    id: 152,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô qua đường sắt không có rào chắn, không có người điều khiển giao thông, người lái xe phải xử lý như thế nào?',
+    options: ['Giảm tốc độ, dừng lại trước vạch dừng, quan sát cả hai phía, nếu không có tàu đi tới, tăng ga nhẹ vượt qua đường sắt.', 'Nếu thấy có tàu đi tới thì dừng lại trước vạch dừng, chỉ khi tàu đi qua mới được đi.', 'Cả hai ý trên.'],
+    correctAnswer: 2,
+    explanation: 'Qua đường sắt không rào chắn: phải giảm tốc độ, dừng quan sát cả hai bên, nếu không có tàu thì đi tiếp; nếu có tàu thì dừng lại nhường đường.'
+  },
+  {
+    id: 153,
+    topicId: 4,
+    question: 'Khi lái xe ô tô qua đường sắt không có rào chắn, không có người điều khiển giao thông, người lái xe thực hiện thao tác: “giảm tốc độ, dừng lại trước vạch dừng, quan sát cả hai phía, nếu không có tàu đi tới, tăng ga nhẹ vượt qua đường sắt. Nếu thấy có tàu đi tới thì dừng lại trước vạch dừng, chỉ khi tàu đi qua mới được đi” để đảm bảo an toàn là đúng hay không?',
+    options: ['Không đúng.', 'Đúng.', 'Không cần thiết, vì nếu nhìn thấy tàu còn cách xa, người lái xe có thể tăng số cao, tăng ga để cho xe nhanh chóng vượt qua đường sắt.'],
+    correctAnswer: 1,
+    explanation: 'Quy tắc dừng xe trước đường sắt, quan sát hai bên và nhường đường cho tàu hỏa trước khi vượt qua là đúng quy định và đảm bảo an toàn tuyệt đối cho người tham gia giao thông.'
+  },
+  {
+    id: 154,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô có hộp số tự động đi vào đường trơn trượt, lầy lội, người lái xe phải xử lý như thế nào để đảm bảo an toàn?',
+    options: ['Về số thấp, kết hợp phanh chân để giảm tốc độ.', 'Giữ nguyên tay số D, kết hợp phanh đỗ để giảm tốc độ.', 'Về số N (số 0), kết hợp phanh chân để giảm tốc độ.'],
+    correctAnswer: 0,
+    explanation: 'Xe số tự động qua đường trơn lầy: cần về vị trí số thấp (như L, D1/D2 hoặc chế độ bán tự động số thấp) để khóa số thấp, giữ đều lực kéo động cơ và phối hợp phanh chân để giảm tốc.'
+  },
+  {
+    id: 155,
+    topicId: 4,
+    question: 'Khi động cơ ô tô đã khởi động, muốn điều chỉnh ghế của người lái, người lái xe phải để cần số ở vị trí nào?',
+    options: ['Vị trí N hoặc vị trí P hoặc số 0.', 'Vị trí D hoặc số 1.', 'Vị trí R.'],
+    correctAnswer: 0,
+    explanation: 'Chỉ được điều chỉnh ghế ngồi lái khi xe đã dừng hẳn và cần số ở vị trí N (số mo) hoặc P (đỗ xe) để đảm bảo không vô tình đạp nhầm ga/phanh hay xe bị trôi.'
+  },
+  {
+    id: 156,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô có hộp số tự động, người lái xe sử dụng chân như thế nào là đúng để bảo đảm an toàn?',
+    options: ['Không sử dụng chân trái; chân phải điều khiển bàn đạp phanh và bàn đạp ga.', 'Chân trái điều khiển bàn đạp phanh, chân phải điều khiển bàn đạp ga.', 'Không sử dụng chân phải; chân trái điều khiển bàn đạp phanh và bàn đạp ga.'],
+    correctAnswer: 0,
+    explanation: 'Lái xe số tự động: chân trái hoàn toàn không sử dụng (để trên bệ nghỉ), chân phải đảm nhận cả bàn đạp phanh và ga để tránh đạp nhầm cả hai cùng lúc hoặc nhầm lẫn giữa ga và phanh.'
+  },
+  {
+    id: 157,
+    topicId: 4,
+    question: 'Khi tầm nhìn bị hạn chế bởi sương mù hoặc mưa to, người lái xe phải thực hiện các thao tác nào để bảo đảm an toàn?',
+    options: ['Tăng tốc độ, chạy gần xe trước, nhìn đèn hậu để định hướng.', 'Giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần.', 'Tăng tốc độ, bật đèn pha vượt qua xe chạy trước.'],
+    correctAnswer: 1,
+    explanation: 'Tầm nhìn hạn chế do mưa/sương mù: giảm tốc độ, chạy xa xe trước, bật đèn sương mù và đèn chiếu gần. Không bật đèn pha vì ánh sáng sẽ bị khúc xạ qua các hạt nước/sương mù làm lóa mắt người lái.'
+  },
+  {
+    id: 158,
+    topicId: 4,
+    question: 'Khi đèn pha của xe đi ngược chiều gây chói mắt, làm giảm khả năng quan sát trên đường, người lái xe xử lý như thế nào dưới đây để bảo đảm an toàn?',
+    options: ['Giảm tốc độ, giữ vững tay lái, nhìn chếch sang lề đường bên phải.', 'Bật đèn pha chiếu xa và giữ nguyên tốc độ.', 'Tăng tốc độ, bật đèn pha đối diện xe phía trước.'],
+    correctAnswer: 0,
+    explanation: 'Bị lóa mắt do xe đối diện dùng đèn pha: phải giảm tốc độ để kiểm soát khoảng cách an toàn, giữ vững tay lái và nhìn hơi chếch sang lề đường bên phải để định hướng.'
+  },
+  {
+    id: 159,
+    topicId: 4,
+    question: 'Khi lái xe ô tô trên mặt đường có nhiều "ổ gà", người lái xe phải thực hiện thao tác như thế nào để bảo đảm an toàn?',
+    options: ['Giảm tốc độ, về số thấp và giữ đều ga.', 'Tăng tốc độ cho xe lướt qua nhanh.', 'Tăng tốc độ, đánh lái liên tục để tránh "ổ gà".'],
+    correctAnswer: 0,
+    explanation: 'Đi qua đoạn đường nhiều ổ gà: giảm tốc độ từ sớm, về số thấp và giữ đều ga để xe bò qua êm ái, giảm lực tác động trực tiếp làm hư hỏng lốp và hệ thống treo.'
+  },
+  {
+    id: 160,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô gặp mưa to hoặc sương mù, người lái xe phải làm gì để bảo đảm an toàn?',
+    options: ['Bật đèn chiếu gần và đèn vàng (nếu có), điều khiển gạt nước, điều khiển ô tô đi với tốc độ chậm để có thể quan sát được; tìm chỗ an toàn dừng xe, bật đèn dừng khẩn cấp báo hiệu cho các xe khác biết.', 'Bật đèn chiếu xa và đèn vàng, điều khiển gạt nước, tăng tốc độ điều khiển ô tô qua khỏi khu vực mưa hoặc sương mù.', 'Tăng tốc độ, bật đèn pha vượt qua xe chạy phía trước.'],
+    correctAnswer: 0,
+    explanation: 'Gặp mưa to/sương mù cực lớn làm hạn chế tầm nhìn: bật đèn chiếu gần, đèn sương mù, gạt mưa đi chậm. Nếu nguy hiểm không nhìn thấy đường, phải dừng xe ở vị trí an toàn ngoài phần đường chạy và bật đèn khẩn cấp hazard.'
+  },
+  {
+    id: 161,
+    topicId: 4,
+    question: 'Điều khiển xe ô tô trong trời mưa, người lái xe phải xử lý như thế nào để bảo đảm an toàn?',
+    options: ['Giảm tốc độ, tăng cường quan sát, không nên phanh gấp, không nên tăng ga hay đánh vô lăng đột ngột, bật đèn chiếu gần, mở chế độ gạt nước ở chế độ phù hợp để đảm bảo quan sát.', 'Phanh gấp khi xe đi vào vũng nước và tăng ga ngay sau khi ra khỏi vũng nước.', 'Bật đèn chiếu xa, tăng tốc độ điều khiển ô tô qua khỏi khu vực mưa.'],
+    correctAnswer: 0,
+    explanation: 'Trời mưa đường trơn trượt: cần giảm tốc độ, đi chậm, không nên tăng ga hay đánh lái đột ngột, cấm phanh gấp để tránh xe mất bám và bị trượt xoay vòng.',
+    isCritical: true
+  },
+  {
+    id: 162,
+    topicId: 4,
+    question: 'Điều khiển xe ô tô trong khu vực đông dân cư cần lưu ý điều gì dưới đây?',
+    options: ['Giảm tốc độ đến mức an toàn, quan sát, nhường đường cho người đi bộ, giữ khoảng cách an toàn với các xe phía trước.', 'Đi đúng làn đường quy định, chỉ được chuyển làn đường ở nơi cho phép, nhưng phải quan sát.', 'Cả hai ý trên.'],
+    correctAnswer: 2,
+    explanation: 'Trong khu đông dân cư: phải giảm tốc độ an toàn, sẵn sàng nhường đường cho người đi bộ, giữ khoảng cách an toàn và tuân thủ đi đúng làn đường quy định.'
+  },
+  {
+    id: 163,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô nhập vào đường cao tốc người lái xe cần thực hiện như thế nào dưới đây để bảo đảm an toàn giao thông?',
+    options: ['Quan sát, phát tín hiệu, nhường đường cho các xe đang chạy trên đường cao tốc, khi đủ điều kiện an toàn thì tăng tốc độ cho xe nhập vào làn đường cao tốc, nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi cho xe nhập vào làn của đường cao tốc.', 'Phát tín hiệu, quan sát các xe đang chạy phía trước, nếu bảo đảm các điều kiện an toàn thì tăng tốc độ cho xe nhập ngay vào làn đường cao tốc.', 'Phát tín hiệu và lái xe nhập vào làn đường tăng tốc, quan sát các xe phía sau đang chạy trên đường cao tốc, khi đủ điều kiện an toàn thì giảm tốc độ, từ từ cho xe nhập vào làn đường cao tốc.'],
+    correctAnswer: 0,
+    explanation: 'Nhập làn cao tốc: phải quan sát, bật xi-nhan xin đường, nhường đường cho xe trên cao tốc, tăng tốc trên làn tăng tốc đạt tốc độ phù hợp rồi mới nhập vào làn chính.'
+  },
+  {
+    id: 164,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô ra khỏi đường cao tốc người lái xe cần thực hiện như thế nào dưới đây để bảo đảm an toàn giao thông?',
+    options: ['Quan sát phía trước để tìm biển báo chỉ dẫn "lối ra đường cao tốc", kiểm tra tình trạng giao thông phía sau và bên phải, nếu bảo đảm điều kiện an toàn thì phát tín hiệu và điều khiển xe chuyển dần sang làn bên phải, nếu có làn đường giảm tốc thì phải cho xe di chuyển trên làn đường đó trước khi ra khỏi đường cao tốc.', 'Quan sát phía trước để tìm biển báo chỉ dẫn "lối ra đường cao tốc", trường hợp vượt qua "lối ra đường cao tốc" thì phát tín hiệu, di chuyển sang làn đường giảm tốc và lùi xe quay trở lại.'],
+    correctAnswer: 0,
+    explanation: 'Ra khỏi cao tốc: chú ý biển chỉ dẫn lối ra từ trước, chuyển sang làn phải, đi vào làn giảm tốc để hạ bớt tốc độ trước khi rẽ hẳn ra ngoài. Cấm lùi xe trên đường cao tốc.'
+  },
+  {
+    id: 165,
+    topicId: 4,
+    question: 'Người lái xe được dừng xe, đỗ xe trên làn dừng khẩn cấp của đường cao tốc trong trường hợp nào dưới đây?',
+    options: ['Xe gặp sự cố, tai nạn hoặc trường hợp khẩn cấp không thể di chuyển bình thường.', 'Để nghỉ ngơi, đi vệ sinh, chụp ảnh, làm việc riêng...', 'Cả hai ý trên.'],
+    correctAnswer: 0,
+    explanation: 'Chỉ được dừng đỗ ở làn khẩn cấp trên cao tốc khi xe gặp sự cố hỏng hóc, tai nạn hoặc tình huống khẩn cấp bất khả kháng. Cấm dừng đỗ để nghỉ ngơi, chụp ảnh hay làm việc riêng.'
+  },
+  {
+    id: 166,
+    topicId: 4,
+    question: 'Trên đường đôi muốn vượt xe kéo rơ moóc phía trước, người lái xe phải xử lý như thế nào?',
+    options: ['Giữ khoảng cách an toàn, tránh đi vào vị trí điểm mù của xe kéo rơ moóc, bật xi nhan trái đồng thời kết hợp đèn, còi xin vượt.', 'Khi xe kéo rơ moóc đã có tín hiệu cho vượt (không có chướng ngại vật phía trước và xe đi ngược chiều), thấy đủ điều kiện an toàn thì vượt dứt khoát, không di chuyển song song bên cạnh xe kéo rơ moóc.', 'Khi vượt qua, phải quan sát gương chiếu hậu bên phải nếu có khoảng trống an toàn mới được cho xe chạy vào làn của mình, tắt xi nhan và tiếp tục hành trình.', 'Cả ba ý trên.'],
+    correctAnswer: 3,
+    explanation: 'Muốn vượt xe kéo rơ-moóc dài: tránh rơi vào vùng điểm mù của họ, bật xi-nhan trái kết hợp còi/đèn xin vượt; khi họ có tín hiệu nhường và đủ an toàn thì vượt dứt khoát; chỉ nhập lại làn khi nhìn rõ đầu xe bị vượt qua gương chiếu hậu.'
+  },
+  {
+    id: 167,
+    topicId: 4,
+    question: 'Khi điều khiển xe ô tô xuống đường dốc dài, độ dốc cao, người lái xe số tự động cần thực hiện các thao tác nào dưới đây để bảo đảm an toàn?',
+    options: ['Nhả bàn đạp ga, về số thấp, đạp phanh chân với mức độ phù hợp để giảm tốc độ.', 'Nhả bàn đạp ga, về số N đạp phanh chân và kéo phanh tay để giảm tốc độ.'],
+    correctAnswer: 0,
+    explanation: 'Xuống dốc cao trên xe số tự động: nhả ga, chuyển cần số về vị trí số thấp (L hoặc chế độ số sàn M-/+) để hãm động cơ, kết hợp phanh chân để điều chỉnh tốc độ.',
+    isCritical: true
+  },
+  {
+    id: 168,
+    topicId: 4,
+    question: 'Khi đi từ đường nhánh ra đường chính, người lái xe phải xử lý như thế nào là đúng?',
+    options: ['Quan sát, giảm tốc độ, phát tín hiệu, nhường đường cho xe trên đường chính từ bất kỳ hướng nào tới.', 'Nháy đèn, bấm còi để xe đi trên đường chính biết và tăng tốc độ cho xe đi ra đường chính.', 'Quan sát xe đang đi trên đường chính, nếu là xe có kích thước lớn hơn thì nhường đường, xe có kích thước nhỏ hơn thì tăng tốc độ cho xe đi ra đường chính.'],
+    correctAnswer: 0,
+    explanation: 'Từ đường nhánh ra đường chính: phải giảm tốc độ, quan sát kỹ, nhường đường cho tất cả các phương tiện trên đường chính từ bất kỳ hướng nào tới.',
+    isCritical: true
+  },
+  {
+    id: 169,
+    topicId: 4,
+    question: 'Khi đang lái xe mô tô hoặc ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọi điện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?',
+    options: ['Giảm tốc độ để bảo đảm an toàn với xe phía trước và sử dụng điện thoại để liên lạc.', 'Giảm tốc độ để dừng xe ở nơi cho phép sau đó sử dụng điện thoại để liên lạc.', 'Tăng tốc độ để cách xa xe phía sau và sử dụng điện thoại để liên lạc.'],
+    correctAnswer: 1,
+    explanation: 'Đang lái xe mà cần sử dụng điện thoại: bắt buộc phải giảm tốc độ, điều khiển xe dừng đỗ vào vị trí an toàn cho phép rồi mới sử dụng điện thoại nhắn tin/gọi điện.',
+    isCritical: true
+  },
+  {
+    id: 170,
+    topicId: 4,
+    question: 'Người ngồi trên xe ô tô cần thực hiện những thao tác mở cửa như thế nào dưới đây để xuống xe để bảo đảm an toàn?',
+    options: ['Quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống xe.', 'Quan sát tình hình giao thông phía trước, không cần quan sát phía sau và bên mở cửa; mở cánh cửa hết hành trình và nhanh chóng ra khỏi xe ô tô.'],
+    correctAnswer: 0,
+    explanation: 'Người ngồi trên xe ô tô mở cửa xuống xe: phải quan sát kỹ trước sau qua các gương và nhìn trực tiếp; mở hé cánh cửa xem có chướng ngại vật/xe đang tới không rồi mới mở vừa đủ để xuống xe.'
+  },
+  {
+    id: 171,
+    topicId: 4,
+    question: 'Khi lái xe ô tô điện xuống dốc dài, đổ đèo, người lái xe cần chú ý những vấn đề gì để bảo đảm an toàn?',
+    options: ['Kiểm tra hệ thống an toàn, pin của xe trước khi xuất phát.', 'Nhả chân ga để phanh tái sinh hoạt động.', 'Rà phanh chân để kịp thời xử lý tình huống khẩn cấp.', 'Cả ba ý trên.'],
+    correctAnswer: 3,
+    explanation: 'Khi lái xe ô tô điện xuống dốc dài, đổ đèo: cần kiểm tra an toàn hệ thống pin trước đi, nhả chân ga để kích hoạt hệ thống phanh tái sinh để giảm tốc và sạc lại pin, rà nhẹ phanh chân khi cần.'
+  },
+  {
+    id: 172,
+    topicId: 4,
+    question: 'Khi lái xe ô tô điện qua khu vực ngập nước, người lái xe cần phải chú ý những vấn đề gì?',
+    options: ['Người lái xe phải tìm hiểu khả năng chìm trong nước của xe để xác định cung đường di chuyển.', 'Giữ vững tay lái, đi đều ga, tránh không để xe chết máy giữa dòng, không nên dừng xe trên đường ngập nước.', 'Lái xe tốc độ chậm, không tạo sóng và giữ khoảng cách an toàn với các phương tiện xung quanh, nhất là người đi bộ.', 'Cả ba ý trên.'],
+    correctAnswer: 3,
+    explanation: 'Lái xe điện qua vùng ngập: đánh giá độ sâu ngập của xe, lái xe chậm, giữ đều ga, không dừng lại giữa vùng ngập và giữ khoảng cách an toàn với các phương tiện xung quanh.'
+  },
+
 ];
