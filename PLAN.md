@@ -73,6 +73,11 @@ src/app/
 - Mục tiêu số câu mỗi topic (nguồn: agy research, cross-check độ tin cậy trung bình — xem cảnh báo bên dưới): Topic 1 ~166 (+146), Topic 2 ~182 (+165), Topic 3 ~114 (+106), Topic 4 ~56 (+46), Topic 5 ~35 (+25), Topic 6 ~21 câu đạo đức mới + giữ 10 câu cũ.
 - **Cảnh báo về nguồn:** Các trích dẫn văn bản pháp luật cụ thể (số hiệu Thông tư/Quyết định) do agy đưa ra KHÔNG được tin tưởng tuyệt đối (mô hình có xu hướng bịa số hiệu văn bản nghe hợp lý, đã phát hiện 2 lần trùng hợp đáng ngờ với ngày hiện tại). Tuy nhiên đã tự xác minh độc lập: repo GitHub thật `truonganhhoang/INT3120-2020` chứa dữ liệu câu hỏi/đáp án/giải thích thật (không phải AI paraphrase) khớp với kiến thức đã biết (vd. nồng độ cồn xe máy 50mg/100ml). Chiến lược: mỗi task mở rộng câu hỏi bắt buộc agy phải fetch nội dung thật từ nguồn cụ thể (không suy luận từ "trí nhớ"), ưu tiên bắt đầu từ repo đã xác minh, và phải liệt kê nguồn cho từng câu.
 
+### Phương pháp đã kiểm chứng cho việc mở rộng câu hỏi
+Task Topic 5 (pilot) đã tìm và tải trực tiếp file PDF chính thức **"Bộ 600 câu hỏi sát hạch"** tại `https://cdn.thuvienphapluat.vn/Uploads/danluat/FileAttack/TT/15694/bo-600-cau-hoi.pdf` (Thư Viện Pháp Luật, ~5.8MB, 4118 dòng text sau khi `pdftotext`). Tôi đã tự tải lại file này và đối chiếu độc lập nhiều câu hỏi (id 76, 77, 78, 79, 80, 102, 103, 104, 105) — khớp CHÍNH XÁC 100% với văn bản gốc, kể cả đáp án đúng. agy cũng đã đúng khi từ chối thêm 6 câu (285-289, 295) vì các câu này chỉ mô tả "hình vẽ dưới đây" (icon đèn cảnh báo táp-lô) không có mô tả chữ nào phân biệt được — không đủ dữ kiện để xác định đáp án đúng, tránh bịa. **→ Dùng chính xác URL PDF này làm nguồn chính cho mọi batch tiếp theo (Topic 1, 2, 3, 4, 6)** — bỏ qua bước tự tìm kiếm nguồn (tiết kiệm rất nhiều thời gian, giảm rủi ro lạc hướng).
+
+- [x] **Topic 5 (Cấu tạo xe):** +30 câu (id 76-105, mục tiêu +25, vượt nhẹ vì nguồn đủ tốt). Nguồn: PDF trên, Chương IV câu 264-300 (trừ 6 câu phụ thuộc hình ảnh không xác định được). Verify: build pass, đối chiếu độc lập nhiều câu khớp 100%, không trùng lặp id, không sửa câu cũ.
+
 ## Milestone 3 — Mở rộng ngân hàng câu hỏi + câu điểm liệt (Ưu tiên cao, độ phức tạp: Lớn)
 
 **Phụ thuộc:** Milestone 1 (đã có `data/questions.ts` riêng).

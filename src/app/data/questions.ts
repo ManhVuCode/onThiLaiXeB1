@@ -115,4 +115,370 @@ export const ALL_QUESTIONS: Question[] = [
   { id: 73, topicId: 6, question: "Hành vi sử dụng điện thoại di động cầm tay khi lái xe bị phạt:", options: ["Nhắc nhở và cảnh cáo", "Phạt 800.000 đến 1 triệu đồng", "Phạt 1-2 triệu đồng và có thể tước GPLX 1-3 tháng", "Chỉ phạt khi gây tai nạn"], correctAnswer: 2, explanation: "Sử dụng điện thoại cầm tay khi lái xe bị phạt tiền từ 1.000.000 đến 2.000.000 đồng và có thể bị tước GPLX từ 1-3 tháng." },
   { id: 74, topicId: 6, question: "Người điều khiển xe ô tô không có giấy phép lái xe bị phạt:", options: ["500.000 đồng", "1-2 triệu đồng", "4-6 triệu đồng và có thể tịch thu phương tiện", "Chỉ cảnh cáo lần đầu"], correctAnswer: 2, explanation: "Điều khiển xe ô tô không có GPLX bị phạt tiền từ 4.000.000 đến 6.000.000 đồng và có thể bị tạm giữ phương tiện." },
   { id: 75, topicId: 6, question: "Bảo hiểm trách nhiệm dân sự bắt buộc của xe ô tô nhằm mục đích:", options: ["Bảo hiểm cho xe khi bị tai nạn", "Bồi thường cho người thứ ba bị thiệt hại do xe gây ra", "Bảo hiểm cho người lái khi bị thương", "Bảo hiểm trộm cắp xe"], correctAnswer: 1, explanation: "Bảo hiểm TNDS bắt buộc bảo vệ người thứ ba (người bị thiệt hại do xe của bạn gây ra), không phải xe của bạn hay bản thân bạn." },
+
+  // ── TOPIC 5 (TIẾP THEO) ──
+  {
+    id: 76,
+    topicId: 5,
+    question: "Phương pháp kiểm tra mức dầu bôi trơn động cơ nào dưới đây là đúng?",
+    options: [
+      "Kiểm tra que thăm dầu trên các-te. Quan sát vệt dầu trên que thăm, mức dầu này phải nằm ở mức tối đa được thể hiện trên que thăm.",
+      "Rút que thăm dầu trên các-te. Quan sát vệt dầu trên que thăm, mức dầu này phải nằm ở mức tối thiểu được thể hiện trên que thăm.",
+      "Rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được thể hiện trên que thăm."
+    ],
+    correctAnswer: 2,
+    explanation: "Phương pháp kiểm tra dầu bôi trơn đúng là rút que thăm dầu ra, lau sạch, cắm ngược trở lại các-te rồi rút ra quan sát. Mức dầu đúng tiêu chuẩn phải nằm trong khoảng Min và Max trên que thăm."
+  },
+  {
+    id: 77,
+    topicId: 5,
+    question: "Xe ô tô tham gia giao thông đường bộ phải bảo đảm các quy định về chất lượng, an toàn kỹ thuật và bảo vệ môi trường nào dưới đây?",
+    options: [
+      "Kính chắn gió, kính cửa phải là loại kính an toàn, bảo đảm tầm nhìn cho người điều khiển; có đủ hệ thống hãm và hệ thống chuyển hướng có hiệu lực, tay lái xe ô tô ở bên trái của xe, có còi với âm lượng đúng quy chuẩn kỹ thuật.",
+      "Có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hãm, đèn tín hiệu; có đủ bộ phận giảm thanh, giảm khói, các kết cấu phải đủ độ bền và bảo đảm tính năng vận hành ổn định.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 2,
+    explanation: "Xe ô tô khi tham gia giao thông phải bảo đảm đầy đủ các yêu cầu về an toàn kỹ thuật như kính chắn gió an toàn, phanh, chuyển hướng hiệu lực, tay lái bên trái, còi đúng quy chuẩn, đủ đèn chiếu sáng, đèn báo hãm, giảm thanh và giảm khói."
+  },
+  {
+    id: 78,
+    topicId: 5,
+    question: "Xe mô tô và xe ô tô tham gia giao thông trên đường bộ có bắt buộc phải có đủ bộ phận giảm thanh không?",
+    options: [
+      "Không bắt buộc.",
+      "Bắt buộc.",
+      "Tùy từng trường hợp."
+    ],
+    correctAnswer: 1,
+    explanation: "Mọi phương tiện cơ giới đường bộ (bao gồm xe mô tô và xe ô tô) đều bắt buộc phải có đủ bộ phận giảm thanh để hạn chế ô nhiễm tiếng ồn khi tham gia giao thông."
+  },
+  {
+    id: 79,
+    topicId: 5,
+    question: "Xe ô tô tham gia giao thông trên đường bộ phải có đủ các loại đèn nào dưới đây?",
+    options: [
+      "Đèn chiếu sáng gần và xa.",
+      "Đèn soi biển số, đèn báo hãm và đèn tín hiệu.",
+      "Dàn đèn pha trên nóc xe.",
+      "Ý 1 và ý 2."
+    ],
+    correctAnswer: 3,
+    explanation: "Theo quy định pháp luật giao thông, xe ô tô tham gia giao thông bắt buộc phải trang bị đèn chiếu sáng gần/xa, đèn soi biển số, đèn báo hãm và đèn tín hiệu chuyển hướng."
+  },
+  {
+    id: 80,
+    topicId: 5,
+    question: "Kính chắn gió của xe ô tô phải bảo đảm yêu cầu nào dưới đây?",
+    options: [
+      "Là loại kính an toàn, kính nhiều lớp, đúng quy cách, không rạn nứt, bảo đảm hình ảnh quan sát rõ ràng, không bị méo mó.",
+      "Là loại kính trong suốt, không rạn nứt, bảo đảm tầm nhìn cho người điều khiển về phía trước mặt và hai bên."
+    ],
+    correctAnswer: 0,
+    explanation: "Kính chắn gió xe ô tô bắt buộc phải là loại kính an toàn nhiều lớp để khi vỡ không tạo ra các mảnh vỡ sắc nhọn, đảm bảo an toàn cho người ngồi trong cabin và giữ hình ảnh quan sát rõ ràng."
+  },
+  {
+    id: 81,
+    topicId: 5,
+    question: "Bánh xe, lốp lắp cho xe ô tô phải bảo đảm an toàn kỹ thuật như thế nào dưới đây?",
+    options: [
+      "Bánh xe phải có kết cấu chắc chắn, lắp đặt đúng quy cách của nhà sản xuất.",
+      "Lốp phải đủ số lượng, đủ áp suất, không phồng rộp, đúng cỡ lốp của nhà sản xuất hoặc tài liệu kỹ thuật quy định; lốp trên cùng một trục của xe sử dụng trong điều kiện hoạt động bình thường phải cùng kiểu loại.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 2,
+    explanation: "Bánh xe lắp cho ô tô phải chắc chắn, đúng quy cách. Lốp xe phải đủ số lượng, áp suất quy định, không bị phồng rộp, nứt nẻ và lốp trên cùng một trục phải có cùng kiểu loại để đảm bảo xe chạy cân bằng."
+  },
+  {
+    id: 82,
+    topicId: 5,
+    question: "Hệ thống lái trên xe ô tô phải bảo đảm yêu cầu nào dưới đây?",
+    options: [
+      "Bảo đảm cho xe chuyển hướng chính xác, điều khiển nhẹ nhàng, an toàn ở mọi vận tốc và tải trọng trong phạm vi tính năng kỹ thuật cho phép của xe.",
+      "Khi hoạt động các cơ cấu chuyển động của hệ thống lái không được va chạm với bất kỳ bộ phận nào của xe; khi quay vô lăng lái về bên phải và bên trái thì không được có sự khác biệt đáng kể về lực tác động lên vành tay lái.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 2,
+    explanation: "Hệ thống lái phải giúp xe chuyển hướng chính xác, nhẹ nhàng, an toàn ở mọi tốc độ và tải trọng. Các chi tiết chuyển động không được va chạm vào khung xe và lực đánh lái hai bên phải đều nhau."
+  },
+  {
+    id: 83,
+    topicId: 5,
+    question: "Mục đích của bảo dưỡng thường xuyên đối với xe ô tô có tác dụng gì dưới đây?",
+    options: [
+      "Bảo dưỡng ô tô thường xuyên làm cho ô tô luôn luôn có tính năng kỹ thuật tốt, giảm cường độ hao mòn của các chi tiết, kéo dài tuổi thọ của xe.",
+      "Ngăn ngừa và phát hiện kịp thời các hư hỏng và sai lệch kỹ thuật để khắc phục, giữ gìn được hình thức bên ngoài.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 2,
+    explanation: "Bảo dưỡng định kỳ và thường xuyên giúp giữ xe ở trạng thái kỹ thuật tốt nhất, giảm hao mòn chi tiết, phát hiện sớm các nguy cơ hư hỏng và giữ xe sạch đẹp."
+  },
+  {
+    id: 84,
+    topicId: 5,
+    question: "Trong các nguyên nhân nêu dưới đây, nguyên nhân nào làm động cơ diesel không nổ?",
+    options: [
+      "Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất.",
+      "Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, không có tia lửa điện.",
+      "Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí và nước, không có tia lửa điện."
+    ],
+    correctAnswer: 0,
+    explanation: "Động cơ diesel sử dụng nguyên lý tự nén nổ dưới áp suất và nhiệt độ cao trong buồng đốt nên không trang bị hệ thống đánh lửa tạo tia lửa điện. Do đó nguyên nhân không nổ do không có tia lửa điện là sai."
+  },
+  {
+    id: 85,
+    topicId: 5,
+    question: "Ống xả lắp trên xe ô tô phải bảo đảm yêu cầu an toàn kỹ thuật nào dưới đây?",
+    options: [
+      "Ống xả không được đặt ở vị trí có thể gây cháy xe hoặc ảnh hưởng đến người ngồi trên xe và gây cản trở hoạt động của hệ thống khác.",
+      "Miệng thoát khí thải của ống xả không được hướng về phía trước và không được hướng về bên phải theo chiều tiến của xe.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 2,
+    explanation: "Ống xả không được hướng về phía trước (gây cản gió và thổi vào xe đối diện) hay bên phải (thổi vào người đi bộ trên vỉa hè) và không được lắp ở vị trí dễ gây bắt lửa cháy xe."
+  },
+  {
+    id: 86,
+    topicId: 5,
+    question: "Dây đai an toàn lắp trên xe ô tô phải bảo đảm yêu cầu an toàn kỹ thuật nào dưới đây?",
+    options: [
+      "Đủ số lượng, lắp đặt chắc chắn không bị rách, đứt, khóa cài đóng, mở nhẹ nhàng, không tự mở, không bị kẹt; kéo ra thu vào dễ dàng, cơ cấu hãm giữ chặt dây khi giật dây đột ngột.",
+      "Đủ số lượng, lắp đặt chắc chắn không bị rách, đứt, khóa cài đóng, mở nhẹ nhàng, không tự mở, không bị kẹt; kéo ra thu vào dễ dàng, cơ cấu hãm mở ra khi giật dây đột ngột.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 0,
+    explanation: "Yêu cầu cốt lõi của dây đai an toàn là cơ cấu hãm phải khóa chặt (giữ chặt dây) khi có lực giật đột ngột (tình huống va chạm hoặc phanh gấp) để bảo vệ người ngồi khỏi lao về phía trước."
+  },
+  {
+    id: 87,
+    topicId: 5,
+    question: "Thế nào là động cơ 4 kỳ?",
+    options: [
+      "Là loại động cơ: để hoàn thành một chu trình công tác của động cơ, pít tông thực hiện 2 (hai) hành trình, trong đó có một lần sinh công.",
+      "Là loại động cơ: để hoàn thành một chu trình công tác của động cơ, pít tông thực hiện 4 (bốn) hành trình, trong đó có một lần sinh công."
+    ],
+    correctAnswer: 1,
+    explanation: "Động cơ 4 kỳ là loại động cơ hoàn thành một chu trình làm việc gồm 4 hành trình của pít-tông (Nạp, Nén, Nổ, Xả), trục khuỷu quay 2 vòng."
+  },
+  {
+    id: 88,
+    topicId: 5,
+    question: "Công dụng của hệ thống bôi trơn đối với động cơ ô tô?",
+    options: [
+      "Cung cấp một lượng dầu bôi trơn đủ và sạch dưới áp suất nhất định đi bôi trơn cho các chi tiết của động cơ để giảm ma sát, giảm mài mòn, làm kín, làm sạch, làm mát và chống gỉ.",
+      "Cung cấp một lượng nhiên liệu đầy đủ và sạch để cho động cơ ô tô hoạt động.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 0,
+    explanation: "Hệ thống bôi trơn dùng để đưa dầu bôi trơn sạch đến các mặt ma sát của các chi tiết động cơ nhằm bôi trơn, làm sạch, làm mát, chống gỉ và làm kín khe hở."
+  },
+  {
+    id: 89,
+    topicId: 5,
+    question: "Niên hạn sử dụng của xe ô tô tải (tính bắt đầu từ năm sản xuất) không quá bao nhiêu năm?",
+    options: [
+      "15 năm.",
+      "20 năm.",
+      "25 năm."
+    ],
+    correctAnswer: 2,
+    explanation: "Theo Nghị định 95/2009/NĐ-CP, niên hạn sử dụng của xe ô tô tải tối đa là 25 năm kể từ năm sản xuất."
+  },
+  {
+    id: 90,
+    topicId: 5,
+    question: "Niên hạn sử dụng của xe ô tô chở người trên 8 chỗ ngồi (không kể chỗ của người lái xe) tính bắt đầu từ năm sản xuất không quá bao nhiêu năm?",
+    options: [
+      "5 năm.",
+      "20 năm.",
+      "25 năm."
+    ],
+    correctAnswer: 1,
+    explanation: "Theo Nghị định 95/2009/NĐ-CP, niên hạn sử dụng của xe ô tô chở người trên 8 chỗ ngồi (không tính ghế lái) tối đa là 20 năm kể từ năm sản xuất."
+  },
+  {
+    id: 91,
+    topicId: 5,
+    question: "Hãy nêu công dụng của động cơ xe ô tô?",
+    options: [
+      "Khi làm việc, nhiệt năng được biến đổi thành cơ năng làm trục khuỷu động cơ quay, truyền lực đến các bánh xe chủ động tạo ra chuyển động tịnh tiến cho xe ô tô.",
+      "Khi làm việc, cơ năng được biến đổi thành nhiệt năng và truyền đến các bánh xe chủ động tạo ra chuyển động tịnh tiến cho xe ô tô.",
+      "Cả hai ý trên."
+    ],
+    correctAnswer: 0,
+    explanation: "Động cơ đốt trong trên xe ô tô chuyển hóa nhiệt năng của quá trình đốt cháy nhiên liệu thành cơ năng làm quay trục khuỷu, truyền qua hệ thống truyền lực để làm quay bánh xe chủ động."
+  },
+  {
+    id: 92,
+    topicId: 5,
+    question: "Hãy nêu công dụng hệ thống truyền lực của xe ô tô?",
+    options: [
+      "Dùng để truyền mô men quay từ động cơ tới các bánh xe chủ động của xe ô tô.",
+      "Dùng để thay đổi hướng chuyển động hoặc giữ cho xe ô tô chuyển động ổn định theo hướng xác định.",
+      "Dùng để làm giảm tốc độ, dừng chuyển động của xe ô tô."
+    ],
+    correctAnswer: 0,
+    explanation: "Hệ thống truyền lực dùng để truyền mô-men xoắn từ trục khuỷu động cơ đến các bánh xe chủ động của xe ô tô."
+  },
+  {
+    id: 93,
+    topicId: 5,
+    question: "Hãy nêu công dụng ly hợp (côn) của xe ô tô?",
+    options: [
+      "Dùng để truyền mô men xoắn giữa các trục không cùng nằm trên một đường thẳng và góc lệch trục luôn thay đổi trong quá trình xe ô tô chuyển động.",
+      "Dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô.",
+      "Dùng để truyền truyền động từ hộp số đến bánh xe chủ động của ô tô."
+    ],
+    correctAnswer: 1,
+    explanation: "Ly hợp (côn) nằm giữa động cơ và hộp số, có công dụng truyền động hoặc cắt (ngắt) truyền động từ động cơ đến hộp số khi cần khởi hành hoặc chuyển số."
+  },
+  {
+    id: 94,
+    topicId: 5,
+    question: "Hãy nêu công dụng hộp số của xe ô tô?",
+    options: [
+      "Truyền và tăng mô men xoắn giữa các trục vuông góc nhau, bảo đảm cho các bánh xe chủ động quay với tốc độ khác nhau khi sức cản chuyển động ở bánh xe hai bên không bằng nhau.",
+      "Truyền và thay đổi mô men xoắn giữa các trục không cùng nằm trên một đường thẳng và góc lệch trục luôn thay đổi trong quá trình ô tô chuyển động, chuyển số êm dịu, dễ điều khiển.",
+      "Truyền và thay đổi mô men từ động cơ đến bánh xe chủ động, cắt truyền động từ động cơ đến bánh xe chủ động, bảo đảm cho xe ô tô chuyển động lùi."
+    ],
+    correctAnswer: 2,
+    explanation: "Hộp số có công dụng truyền và thay đổi mô-men từ động cơ đến bánh xe chủ động, ngắt (cắt) truyền động từ động cơ (về số trung gian - số N) và đảo chiều quay của bánh xe để giúp xe lùi."
+  },
+  {
+    id: 95,
+    topicId: 5,
+    question: "Hãy nêu công dụng hệ thống lái của xe ô tô?",
+    options: [
+      "Dùng để thay đổi mô men từ động cơ tới các bánh xe chủ động khi xe ô tô chuyển động theo hướng xác định.",
+      "Dùng để thay đổi mô men giữa các trục vuông góc nhau khi xe ô tô chuyển động theo hướng xác định.",
+      "Dùng để thay đổi hướng chuyển động hoặc giữ cho xe ô tô chuyển động ổn định theo hướng xác định."
+    ],
+    correctAnswer: 2,
+    explanation: "Hệ thống lái được trang bị trên ô tô dùng để thay đổi hướng chuyển động hoặc giữ cho xe ô tô chuyển động ổn định theo hướng xác định do người lái điều khiển qua vô-lăng."
+  },
+  {
+    id: 96,
+    topicId: 5,
+    question: "Hãy nêu công dụng hệ thống phanh của xe ô tô?",
+    options: [
+      "Dùng để giảm tốc độ, dừng chuyển động của xe ô tô và giữ cho xe ô tô đứng yên trên dốc.",
+      "Dùng để thay đổi hướng chuyển động hoặc giữ cho xe ô tô chuyển động ổn định theo hướng xác định.",
+      "Dùng để truyền hoặc ngắt truyền động từ động cơ đến bánh xe chủ động của xe ô tô."
+    ],
+    correctAnswer: 0,
+    explanation: "Hệ thống phanh có công dụng làm giảm tốc độ, dừng hẳn xe ô tô hoặc giữ cho xe đứng yên trên dốc (phanh tay)."
+  },
+  {
+    id: 97,
+    topicId: 5,
+    question: "Khi khởi động xe ô tô số tự động có trang bị chìa khóa thông minh, người lái xe có cần đạp hết hành trình bàn đạp chân phanh hay không?",
+    options: [
+      "Phải đạp hết hành trình bàn đạp chân phanh.",
+      "Không cần đạp phanh.",
+      "Tùy từng trường hợp."
+    ],
+    correctAnswer: 0,
+    explanation: "Với xe ô tô số tự động sử dụng nút bấm khởi động Start/Stop, để đảm bảo an toàn và kích hoạt mạch điện khởi động, người lái bắt buộc phải đạp hết hành trình chân phanh."
+  },
+  {
+    id: 98,
+    topicId: 5,
+    question: "Ắc quy được trang bị trên xe ô tô có tác dụng gì dưới đây?",
+    options: [
+      "Giúp người lái xe kịp thời tạo xung lực tối đa lên hệ thống phanh trong khoảnh khắc đầu tiên của tình huống khẩn cấp.",
+      "Ổn định chuyển động của xe ô tô khi đi vào đường vòng.",
+      "Hỗ trợ người lái xe khởi hành ngang dốc.",
+      "Để tích trữ điện năng, cung cấp cho các phụ tải khi máy phát điện chưa làm việc."
+    ],
+    correctAnswer: 3,
+    explanation: "Ắc quy là nguồn điện một chiều có khả năng nạp (tích điện) và phát điện để cung cấp năng lượng khởi động xe và cấp điện cho các thiết bị điện khi động cơ chưa hoạt động."
+  },
+  {
+    id: 99,
+    topicId: 5,
+    question: "Máy phát điện được trang bị trên xe ô tô có tác dụng gì dưới đây?",
+    options: [
+      "Để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy.",
+      "Ổn định chuyển động của xe ô tô khi đi vào đường vòng.",
+      "Hỗ trợ người lái xe khởi hành ngang dốc.",
+      "Để tích trữ điện năng và cung cấp điện cho các phụ tải làm việc."
+    ],
+    correctAnswer: 0,
+    explanation: "Máy phát điện hoạt động nhờ mô-men quay từ động cơ, có vai trò phát điện để cung cấp năng lượng cho toàn bộ hệ thống điện của xe và sạc lại điện cho ắc quy khi xe nổ máy."
+  },
+  {
+    id: 100,
+    topicId: 5,
+    question: "Dây đai an toàn được trang bị trên xe ô tô có tác dụng gì dưới đây?",
+    options: [
+      "Ổn định chuyển động của xe ô tô khi đi vào đường vòng.",
+      "Giữ chặt người lái và hành khách trên ghế ngồi khi xe ô tô đột ngột dừng lại."
+    ],
+    correctAnswer: 1,
+    explanation: "Dây đai an toàn giữ người lái và hành khách cố định tại ghế ngồi, ngăn cản hiện tượng lao về phía trước do quán tính khi xe phanh gấp hoặc va chạm trực diện."
+  },
+  {
+    id: 101,
+    topicId: 5,
+    question: "Túi khí được trang bị trên xe ô tô có tác dụng gì dưới đây?",
+    options: [
+      "Giữ chặt người lái và hành khách trên ghế ngồi khi xe ô tô đột ngột dừng lại.",
+      "Giảm khả năng va đập của một số bộ phận cơ thể quan trọng với các vật thể trong xe.",
+      "Hấp thụ một phần lực va đập lên người lái và hành khách.",
+      "Ý 2 và ý 3."
+    ],
+    correctAnswer: 3,
+    explanation: "Túi khí an toàn có tác dụng giảm chấn do va đập của đầu/ngực người ngồi với vô lăng, táp lô, đồng thời hấp thụ lực tác động trực diện. Còn việc giữ chặt người trên ghế là của dây đai an toàn."
+  },
+  {
+    id: 102,
+    topicId: 5,
+    question: "Thiết bị kích (hay nâng) được trang bị trên xe ô tô có tác dụng gì dưới đây?",
+    options: [
+      "Dùng để kích (hay nâng) xe ô tô phục vụ thay lốp hoặc sửa chữa.",
+      "Vặn ốc lắp bánh xe.",
+      "Ổn định chuyển động của xe ô tô khi đi vào đường vòng.",
+      "Giữ chặt người lái và hành khách trên ghế ngồi khi xe ô tô đột ngột dừng lại."
+    ],
+    correctAnswer: 0,
+    explanation: "Kích nâng xe là dụng cụ đi kèm theo xe phục vụ cho việc nâng gầm xe lên khi cần thay thế lốp xe dự phòng dọc đường."
+  },
+  {
+    id: 103,
+    topicId: 5,
+    question: "Thiết bị búa chuyên dụng phá cửa kính được trang bị trên xe ô tô dùng để làm gì dưới đây?",
+    options: [
+      "Thay lốp xe.",
+      "Chữa cháy.",
+      "Phá cửa kính xe ô tô trong các trường hợp khân cấp để thoát hiểm.",
+      "Vặn ốc để tháo lắp bánh xe."
+    ],
+    correctAnswer: 2,
+    explanation: "Búa chuyên dụng phá kính được trang bị để người dùng đập vỡ các tấm kính cường lực thoát ra ngoài khi xe gặp nạn khẩn cấp, cháy nổ, rơi xuống nước."
+  },
+  {
+    id: 104,
+    topicId: 5,
+    question: "Bình chữa cháy xách tay được trang bị trên xe ô tô dùng để làm gì dưới đây?",
+    options: [
+      "Thay lốp xe.",
+      "Chữa cháy trong các trường hợp hỏa hoạn.",
+      "Cầm máu cho người bị nạn."
+    ],
+    correctAnswer: 1,
+    explanation: "Bình chữa cháy nhỏ xách tay có công dụng dập tắt các đám cháy, hỏa hoạn nhỏ vừa mới phát sinh trên xe nhằm hạn chế thiệt hại."
+  },
+  {
+    id: 105,
+    topicId: 5,
+    question: "Nút bấm có biểu tượng hình tam giác màu đỏ trên xe ô tô (Hazard) có ý nghĩa như thế nào dưới đây?",
+    options: [
+      "Báo hiệu xin đường cho xe đi thẳng.",
+      "Báo hiệu hệ thống phanh bị lỗi.",
+      "Báo hiệu xe đang ở tình huống nguy hiểm cần cảnh báo khẩn cấp.",
+      "Báo hiệu đến thời gian cần bảo dưỡng."
+    ],
+    correctAnswer: 2,
+    explanation: "Nút bấm tam giác màu đỏ (Hazard light) dùng để kích hoạt các đèn xi-nhan nhấp nháy đồng thời nhằm cảnh báo nguy hiểm, sự cố hoặc khi xe phải dừng khẩn cấp trên làn đường di chuyển."
+  }
 ];
