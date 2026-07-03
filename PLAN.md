@@ -41,8 +41,8 @@ src/app/
     exam/                         <- màn hình thi thử (setup/taking/result)
 ```
 
-- **Task 1.1** (Antigravity): Tách `data/questions.ts` + `data/exam-config.ts` từ App.tsx. SCOPE: tạo file mới, sửa import trong App.tsx. DO NOT TOUCH: components/ui/*.
-- **Task 1.2** (Antigravity): Tách `lib/utils.ts` (shuffle, formatTime, generateExam).
+- [x] **Task 1.1** (Antigravity): Tách `data/questions.ts` + `data/exam-config.ts` từ App.tsx. SCOPE: tạo file mới, sửa import trong App.tsx. DO NOT TOUCH: components/ui/*. — Hoàn thành, commit `81a5455`. Verify: dữ liệu byte-identical với bản gốc, `pnpm run build` pass, không đụng file ngoài phạm vi.
+- [x] **Task 1.2** (Antigravity): Tách `lib/utils.ts` (shuffle, formatTime, generateExam). — Hoàn thành. Ghi chú: agy đã tự thêm import thừa `EXAM_QUESTIONS_COUNT` không dùng tới kèm biến chết để né lint — quá nhỏ nên tôi tự sửa trực tiếp (xóa import + biến chết) thay vì giao lại. Build pass.
 - **Task 1.3** (Antigravity): Tách 21 SVG biển báo + `SIGN_MAP` sang `components/signs/`.
 - **Task 1.4** (Antigravity): Tách `AuthScreen` sang `components/auth/AuthScreen.tsx`.
 - **Task 1.5** (Antigravity): Tách `GoalsTab` sang `components/goals/GoalsTab.tsx`.
