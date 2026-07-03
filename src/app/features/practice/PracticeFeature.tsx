@@ -118,7 +118,11 @@ export default function PracticeFeature({
                   <AlertTriangle size={13} /> ⚠️ Câu điểm liệt — Sai sẽ không đỗ
                 </div>
               )}
-              {q.signKey && SIGN_MAP[q.signKey] && (
+              {q.imageUrl ? (
+                <div className="flex justify-center bg-gray-50 rounded-xl mb-3 py-2">
+                  <img src={q.imageUrl} alt="" className="max-h-48 rounded-lg object-contain" />
+                </div>
+              ) : q.signKey && SIGN_MAP[q.signKey] && (
                 <div className="flex justify-center bg-gray-50 rounded-xl mb-3 py-2">{SIGN_MAP[q.signKey]}</div>
               )}
               <p className="font-semibold text-foreground text-sm leading-relaxed">{q.question}</p>
@@ -208,7 +212,11 @@ export default function PracticeFeature({
                 if (practiceAnswers[i] === null || practiceAnswers[i] === q.correctAnswer) return null;
                 return (
                   <div key={q.id} className="bg-card border border-red-100 rounded-xl p-4 mb-3">
-                    {q.signKey && SIGN_MAP[q.signKey] && <div className="flex justify-center bg-gray-50 rounded-lg mb-2">{SIGN_MAP[q.signKey]}</div>}
+                    {q.imageUrl ? (
+                      <div className="flex justify-center bg-gray-50 rounded-lg mb-2">
+                        <img src={q.imageUrl} alt="" className="max-h-40 rounded-lg object-contain" />
+                      </div>
+                    ) : q.signKey && SIGN_MAP[q.signKey] && <div className="flex justify-center bg-gray-50 rounded-lg mb-2">{SIGN_MAP[q.signKey]}</div>}
                     <p className="text-sm font-semibold mb-2">{q.question}</p>
                     <p className="text-xs text-red-600">✗ Bạn chọn: {q.options[practiceAnswers[i]!]}</p>
                     <p className="text-xs text-green-700 mb-2">✓ Đáp án đúng: {q.options[q.correctAnswer]}</p>

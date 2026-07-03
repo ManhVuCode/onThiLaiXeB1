@@ -109,8 +109,21 @@ Chuyển sang dùng **Claude Opus (qua Agent tool) làm subagent thay cho `agy`*
 - Build pass, test end-to-end thật trên trình duyệt (đăng nhập → đủ 6 topic với số câu mới → thi thử 35 câu → nộp bài → xem kết quả) — chạy mượt.
 
 **Còn thiếu (không chặn, có thể làm sau nếu cần):**
-- Một số câu bị loại vì phụ thuộc hình ảnh táp-lô/sơ đồ không đọc rõ (mỗi batch tự báo cáo số lượng và lý do cụ thể) — chấp nhận được, ưu tiên độ chính xác hơn số lượng.
 - Danh sách câu điểm liệt (isCritical) chưa đối chiếu với danh sách 60 câu điểm liệt chính thức đầy đủ — hiện chỉ gắn dựa trên phán đoán ngữ cảnh nguy hiểm rõ ràng của từng batch, nên coi là gần đúng chứ chưa phải danh sách chính thức 100%.
+
+### Milestone 3.1 — Ảnh thật cắt từ PDF (Hoàn thành)
+
+Người dùng cung cấp thêm 1 bản PDF khác (`600-cau-hoi-thi-ly-thuyet-lai-xe_hoclaixehcm.vn.pdf`, cùng nội dung 600 câu nhưng có nhúng ảnh gốc chất lượng cao — 321 ảnh embedded, PyMuPDF trích xuất trực tiếp không mất chất lượng) — yêu cầu: nhiều câu không có ảnh thì không thể trả lời được, phải cắt ảnh thật gắn vào đúng câu.
+
+- Thêm field `imageUrl?: string` vào `Question` interface (ưu tiên hơn `signKey` khi cả hai cùng có).
+- Extract 321 ảnh bằng PyMuPDF (`get_images`/`extract_image`), map ảnh → đúng "Câu N" bằng tọa độ Y trên trang (pdfplumber). Lưu tại `public/question-images/cau-N-idx.{ext}`.
+- **Bài học quan trọng:** Ban đầu thử match câu hỏi hiện có (593 câu) với "Câu N" gốc bằng fuzzy text-matching trên nội dung câu hỏi — THẤT BẠI nặng (nhiều câu bị gán trùng cùng 1 ảnh, vd Câu 306 bị dùng cho 32 câu khác nhau) vì các batch trước đó **tự mô tả** biển báo/sơ đồ bằng lời (do lúc đó chưa có ảnh) nên câu hỏi/option dạng "Biển 1/2/3" bị trùng lặp cấu trúc quá nhiều giữa các câu khác nhau.
+- **Giải pháp đúng:** Dựng lại mapping chính xác id↔"Câu N" bằng cách dựa vào thứ tự xử lý tuần tự đã biết của từng batch gốc (báo cáo chi tiết mỗi batch đã liệt kê chính xác câu nào được thêm/loại theo đúng thứ tự) — không dùng suy đoán nội dung. Verify bằng lấy mẫu ngẫu nhiên đối chiếu trực tiếp với PDF gốc — khớp 100%, 0 trùng lặp ảnh.
+- Áp dụng ảnh cho 270 câu (topic 2, 3 chủ yếu) bằng mapping chính xác này.
+- **Khôi phục 11 câu hỏi "biểu tượng táp-lô"** trước đó bị loại bỏ hoàn toàn (vì không có ảnh nên không xác định được đáp án) — nay xem trực tiếp ảnh (đèn phanh tay, dầu, cửa xe, dây an toàn, nhiên liệu, check engine, TPMS, ABS, trợ lực lái, ECO...) để xác định chính xác đáp án, đối chiếu với gạch chân trong PDF — khớp 100% cho tất cả 11 câu.
+- Cập nhật `PracticeFeature.tsx` và `ExamFeature.tsx`: hiển thị `imageUrl` (ảnh thật) ưu tiên hơn `signKey` (SVG vẽ tay) khi cả hai cùng tồn tại.
+- **Tổng số câu hỏi: 604** (tăng từ 593). Có ảnh thật: 286 câu.
+- Verify: build pass, toàn bộ 286 imageUrl trỏ đến file thật tồn tại, không trùng lặp ảnh, test trực tiếp trên trình duyệt (ảnh biển báo, ảnh sa hình hiển thị đúng).
 
 ## Milestone 4 — Hoàn thiện chế độ thi thử (Ưu tiên vừa, độ phức tạp: Nhỏ)
 

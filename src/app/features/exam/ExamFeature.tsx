@@ -116,7 +116,11 @@ export default function ExamFeature({
 
           <div className="bg-card border border-border rounded-2xl p-5 shadow-sm">
             {examQuestions[examIndex].isCritical && <div className="flex items-center gap-1.5 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-1.5 mb-3 font-semibold"><AlertTriangle size={13} /> ⚠️ Câu điểm liệt</div>}
-            {examQuestions[examIndex].signKey && SIGN_MAP[examQuestions[examIndex].signKey!] && (
+            {examQuestions[examIndex].imageUrl ? (
+              <div className="flex justify-center bg-gray-50 rounded-xl mb-3 py-2">
+                <img src={examQuestions[examIndex].imageUrl} alt="" className="max-h-48 rounded-lg object-contain" />
+              </div>
+            ) : examQuestions[examIndex].signKey && SIGN_MAP[examQuestions[examIndex].signKey!] && (
               <div className="flex justify-center bg-gray-50 rounded-xl mb-3 py-2">{SIGN_MAP[examQuestions[examIndex].signKey!]}</div>
             )}
             <p className="font-semibold text-foreground leading-relaxed">{examQuestions[examIndex].question}</p>
@@ -201,7 +205,11 @@ export default function ExamFeature({
                           {q.isCritical && <span className="text-xs text-red-600 bg-red-50 px-1.5 py-0.5 rounded font-semibold">⚠️ Điểm liệt</span>}
                           <span className="text-xs text-muted-foreground">{TOPICS.find((t) => t.id === q.topicId)?.icon}</span>
                         </div>
-                        {q.signKey && SIGN_MAP[q.signKey] && <div className="flex bg-gray-50 rounded-lg mb-1 scale-75 origin-left">{SIGN_MAP[q.signKey]}</div>}
+                        {q.imageUrl ? (
+                          <div className="flex bg-gray-50 rounded-lg mb-1 py-1">
+                            <img src={q.imageUrl} alt="" className="max-h-24 rounded object-contain" />
+                          </div>
+                        ) : q.signKey && SIGN_MAP[q.signKey] && <div className="flex bg-gray-50 rounded-lg mb-1 scale-75 origin-left">{SIGN_MAP[q.signKey]}</div>}
                         <p className="text-sm font-semibold">{q.question}</p>
                       </div>
                     </div>
